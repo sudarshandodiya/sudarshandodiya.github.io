@@ -6,8 +6,6 @@ tags: ["welcome", "introduction"]
 categories: ["general"]
 ---
 
-# Welcome to My Blog!
-
 This is my first blog post on my new portfolio website. I'm excited to share my journey in software development and document my learnings along the way.
 
 ## What to Expect

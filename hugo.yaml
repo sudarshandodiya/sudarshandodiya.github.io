@@ -9,9 +9,9 @@ enableRobotsTXT: true
 # enableEmoji: false
 # hasCJKLanguage: true
 
-# services:
-#   googleAnalytics:
-#     ID: G-MEASUREMENT_ID
+services:
+  googleAnalytics:
+    ID: G-NG384YLE8D
 
 outputs:
   home: [HTML]
@@ -92,11 +92,11 @@ params:
   description: "Senior Software Engineer | Full-Stack Developer | Tech Enthusiast"
 
   navbar:
-    displayTitle: true
+    displayTitle: false
     displayLogo: true
     logo:
       path: favicon.svg
-      dark: favicon.svg
+      dark: favicon-dark.svg
       width: 40
       height: 20
       link: /
@@ -113,7 +113,7 @@ params:
 
   footer:
     enable: true
-    displayCopyright: true
+    displayCopyright: 
     displayPoweredBy: false
     width: normal
 

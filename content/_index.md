@@ -20,24 +20,29 @@ draft: false
 
 <br />
 
-{{< hextra/hero-button text="View My Blog" link="/blog" >}}
-
-<br />
-
-
-# About Me
+{{< hextra/hero-section>}}
+About Me
+{{< /hextra/hero-section>}}
 
 I'm a Senior Software Engineer 2 at Surya Digital with over 3 years of experience in backend development, cloud technologies, and microservices architecture. Based in Bengaluru, Karnataka, I specialize in building scalable systems and have a passion for optimizing performance and mentoring junior developers.
 
 Currently, I'm designing internal LLM APIs and architecting robust microservices that handle 10,000+ requests per second. I love solving complex technical challenges and have successfully reduced deployment times, improved system performance, and led the development of multiple internal tools that enhance team productivity.
 
-## What You'll Find Here
+</br>
+
+{{< hextra/hero-section>}}
+What You'll Find Here
+{{< /hextra/hero-section>}}
 
 {{< cards >}}
   {{< card link="/blog" title="📝 Blog" subtitle="Technical articles, tutorials, and thoughts on software development." >}}
 {{< /cards >}}
 
-## Skills & Technologies
+</br>
+
+{{< hextra/hero-section>}}
+Skills & Technologies
+{{< /hextra/hero-section>}}
 
 ### 🚀 Backend Development
 - **Languages**: Kotlin, Java
