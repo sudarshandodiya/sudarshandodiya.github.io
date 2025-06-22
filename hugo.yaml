@@ -1,0 +1,166 @@
+# Configuration
+baseURL: "https://sudarshandodiya.github.io/"
+title: "Sudarshan Dodiya"
+enableRobotsTXT: true
+
+# Parse Git commit
+# enableGitInfo: false
+
+# enableEmoji: false
+# hasCJKLanguage: true
+
+# services:
+#   googleAnalytics:
+#     ID: G-MEASUREMENT_ID
+
+outputs:
+  home: [HTML]
+  page: [HTML]
+  section: [HTML, RSS]
+
+defaultContentLanguage: en
+languages:
+  en:
+    languageName: English
+    weight: 1
+    title: Sudarshan Dodiya
+
+module:
+  hugoVersion:
+    extended: true
+    min: "0.146.0"
+  # workspace: hugo.work
+  imports:
+    - path: github.com/imfing/hextra
+
+markup:
+  highlight:
+    noClasses: false
+  goldmark:
+    renderer:
+      unsafe: true
+    # extensions:
+    #   passthrough:
+    #     delimiters:
+    #       block: [['\\[', '\\]'], ['$$', '$$']]
+    #       inline: [['\\(', '\\)']]
+    #     enable: true
+
+enableInlineShortcodes: true
+
+menu:
+  main:
+    - identifier: home
+      name: Home
+      pageRef: /
+      weight: 1
+    - identifier: blog
+      name: Blog
+      pageRef: /blog
+      weight: 2
+    # - identifier: about
+    #   name: About
+    #   pageRef: /about
+    #   weight: 3
+    - name: Search
+      weight: 4
+      params:
+        type: search
+    - name: GitHub
+      weight: 5
+      url: "https://github.com/sudarshandodiya"
+      params:
+        icon: github
+    - name: LinkedIn
+      weight: 6
+      url: "https://www.linkedin.com/in/sudarshan-dodiya/"
+      params:
+        icon: linkedin
+
+  # sidebar:
+  #   - identifier: more
+  #     name: More
+  #     params:
+  #       type: separator
+  #     weight: 1
+  #   - identifier: about
+  #     name: "About"
+  #     pageRef: "/about"
+  #     weight: 2
+
+params:
+  description: "Senior Software Engineer | Full-Stack Developer | Tech Enthusiast"
+
+  navbar:
+    displayTitle: true
+    displayLogo: true
+    logo:
+      path: favicon.svg
+      dark: favicon.svg
+      width: 40
+      height: 20
+      link: /
+    width: wide
+
+  page:
+    # full (100%), wide (90rem), normal (80rem)
+    width: normal
+
+  theme:
+    # light | dark | system
+    default: system
+    displayToggle: true
+
+  footer:
+    enable: true
+    displayCopyright: true
+    displayPoweredBy: false
+    width: normal
+
+  # Display the last modification date
+  # displayUpdatedDate: true
+  # dateFormat: "January 2, 2006"
+
+  # Search
+  # flexsearch is enabled by default
+  search:
+    enable: true
+    type: flexsearch
+
+    flexsearch:
+      # index page by: content | summary | heading | title
+      index: content
+      # full | forward | reverse | strict
+      # https://github.com/nextapps-de/flexsearch/#tokenizer-prefix-search
+      tokenize: forward
+
+  editURL:
+    enable: false
+    # base: "https://github.com/sudarshandodiya/sudarshandodiya.github.io/edit/main/content"
+
+  blog:
+    list:
+      displayTags: true
+      # date | lastmod | publishDate | title | weight
+      sortBy: date
+      sortOrder: desc # or "asc"
+    article:
+      displayPagination: true
+      toc:
+        displayTags: true
+
+  highlight:
+    copy:
+      enable: true
+      # hover | always
+      display: hover
+
+  # comments:
+  #   enable: false
+  #   type: giscus
+  #   # https://giscus.app/
+  #   giscus:
+  #     repo: sudarshandodiya/sudarshandodiya.github.io
+  #     repoId: YOUR_REPO_ID
+  #     category: General
+  #     categoryId: YOUR_CATEGORY_ID
