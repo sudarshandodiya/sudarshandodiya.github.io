@@ -2,12 +2,12 @@
 title: '{{ replace .File.ContentBaseName "-" " " | title }}'
 date: '{{ .Date }}'
 draft: true
-description: ""
+description: ''
 tags: []
 categories: []
 weight: 10
 toc: true
-editURL: ""
+editURL: ''
 excludeSearch: false
 sidebar:
   exclude: false
@@ -15,6 +15,5 @@ sidebar:
 
 <!-- Add your content here -->
 
-{{< callout type="info" >}}
-This is a new post created from the archetype template.
-{{< /callout >}}
+{{< callout type="info" >}} This is a new post created from the archetype
+template. {{< /callout >}}

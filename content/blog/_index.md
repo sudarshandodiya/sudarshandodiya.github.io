@@ -1,11 +1,12 @@
 ---
-title: "Blog"
+title: 'Blog'
 date: 2025-06-21T20:15:17+05:30
 draft: false
 ---
 
 <br />
 
-Welcome to my blog! Here I share my thoughts, experiences, and learnings in software development and technology.
+Welcome to my blog! Here I share my thoughts, experiences, and learnings in
+software development and technology.
 
 ## Recent Posts

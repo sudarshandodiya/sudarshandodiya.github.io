@@ -1,0 +1,21 @@
+[tools]
+go = "1.24.4"
+hugo = "0.157.0"
+markdownlint-cli2 = "latest"
+prettier = "latest"
+
+[tasks.lint]
+description = "Lint markdown files"
+run = "markdownlint-cli2 '**/*.md'"
+
+[tasks.format]
+description = "Format markdown files"
+run = "prettier --write '**/*.md'"
+
+[tasks.build]
+description = "Build the Hugo site"
+run = "hugo --gc --minify"
+
+[tasks.serve]
+description = "Serve site locally"
+run = "hugo serve"

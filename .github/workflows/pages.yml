@@ -30,33 +30,28 @@ jobs:
   # Build job
   build:
     runs-on: ubuntu-latest
-    env:
-      HUGO_VERSION: 0.157.0
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 0 # fetch all history for .GitInfo and .Lastmod
           submodules: recursive
-      - name: Setup Go
-        uses: actions/setup-go@v5
-        with:
-          go-version: "1.26.1"
+      - name: Setup Mise
+        uses: jdx/mise-action@v2
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
-      - name: Setup Hugo
+      - name: Lint and Format Check
         run: |
-          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
-          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
+          mise run lint
+          mise run format # We check if formatting changes anything
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
         run: |
-          hugo \
-            --gc --minify \
+          mise run build \
             --baseURL "https://${{ github.repository_owner }}.github.io/"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
