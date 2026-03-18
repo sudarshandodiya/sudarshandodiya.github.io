@@ -15,20 +15,11 @@ draft: false
 <br />
 
 {{< hextra/hero-subtitle >}}
-  Senior Software Engineer specializing in microservices, cloud architecture, and performance optimization.<br />Welcome to my digital space where I share my technical journey and insights.
+  Software Engineer specializing in microservices, cloud architecture, and performance optimization.<br />
+  Welcome to my digital space where I share my technical journey and insights.
 {{< /hextra/hero-subtitle >}}
 
 <br />
-
-{{< hextra/hero-section>}}
-About Me
-{{< /hextra/hero-section>}}
-
-I'm a Senior Software Engineer 2 at Surya Digital with over 3 years of experience in backend development, cloud technologies, and microservices architecture. Based in Bengaluru, Karnataka, I specialize in building scalable systems and have a passion for optimizing performance and mentoring junior developers.
-
-Currently, I'm designing internal LLM APIs and architecting robust microservices that handle 10,000+ requests per second. I love solving complex technical challenges and have successfully reduced deployment times, improved system performance, and led the development of multiple internal tools that enhance team productivity.
-
-</br>
 
 {{< hextra/hero-section>}}
 What You'll Find Here
@@ -39,36 +30,3 @@ What You'll Find Here
 {{< /cards >}}
 
 </br>
-
-{{< hextra/hero-section>}}
-Skills & Technologies
-{{< /hextra/hero-section>}}
-
-### 🚀 Backend Development
-- **Languages**: Kotlin, Java
-- **Frameworks**: Spring Boot, Ktor
-- **Architecture**: Microservices Architecture, REST APIs, gRPC, Message Queues
-
-### ☁️ Cloud & DevOps
-- **Containerization**: Docker, Kubernetes
-- **Cloud Platforms**: AWS
-- **CI/CD**: Deployment Pipelines, Infrastructure as Code, Terraform
-- **Monitoring**: Cloud Monitoring
-
-### 🗄️ Database Technologies
-- **Databases**: PostgreSQL, MongoDB, Redis
-- **Skills**: Database Schema Migration, Data Modeling, Database Indexing, SQL, NoSQL
-
-### 🎨 Frontend Technologies
-- **Languages**: JavaScript, TypeScript
-- **Framework**: React
-- **Skills**: Web Application Development, Responsive Design, State Management
-
-### 🛠️ Software Engineering
-- **Tools**: Git, Gradle, Testing Frameworks
-- **Practices**: Code Generation, Dependency Management, Agile Development, Code Review, Design Patterns
-
-### ⚡ Performance Optimization
-- **Techniques**: Performance Testing, Bottleneck Identification, Code Optimization
-- **Tools**: GraalVM
-- **Achievements**: Memory Usage Reduction, Startup Time Reduction
